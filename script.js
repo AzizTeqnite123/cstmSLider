@@ -37,23 +37,23 @@ var swiper = new Swiper('.cstmSlider', {
             centeredSlides: true,
         },
     },
-    on: {
-        slideChange: function () {
-            const slides = document.querySelectorAll('.cstmSlider .swiper-slide');
+    // on: {
+    //     slideChange: function () {
+    //         const slides = document.querySelectorAll('.cstmSlider .swiper-slide');
 
-            slides.forEach(slide => {
-                slide.style.opacity = 0;
-                slide.style.transform = "scale(0.8)";
-                slide.classList.remove('animate-slide');
-            });
+    //         slides.forEach(slide => {
+    //             slide.style.opacity = 0;
+    //             slide.style.transform = "scale(0.8)";
+    //             slide.classList.remove('animate-slide');
+    //         });
 
-            setTimeout(() => {
-                slides.forEach(slide => {
-                    slide.classList.add('animate-slide');
-                });
-            }, 50);
-        }
-    }
+    //         setTimeout(() => {
+    //             slides.forEach(slide => {
+    //                 slide.classList.add('animate-slide');
+    //             });
+    //         }, 50);
+    //     }
+    // }
 });
 
 // SLIDER-SCRIPT
